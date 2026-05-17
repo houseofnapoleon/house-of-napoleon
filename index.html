@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The House of Napoleon</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #F5F1EB;
+      color: #111;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.5;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    header {
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .logo .small {
+      font-size: 12px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+    }
+
+    .logo .main {
+      font-size: 52px;
+      letter-spacing: 0.18em;
+    }
+
+    .logo .sub {
+      font-style: italic;
+      font-size: 18px;
+    }
+
+    .button {
+      background: black;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 60px;
+      padding: 60px 0 120px;
+    }
+
+    .hero-text small {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 82px;
+      line-height: 0.95;
+      margin: 30px 0;
+      font-weight: 400;
+    }
+
+    .hero-text p {
+      max-width: 500px;
+      color: rgba(0,0,0,0.7);
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 30px;
+    }
+
+    section {
+      padding-bottom: 120px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title small {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: rgba(0,0,0,0.5);
+    }
+
+    .section-title h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 56px;
+      font-weight: 400;
+      margin-top: 20px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 30px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 24px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: rgba(0,0,0,0.7);
+    }
+
+    footer {
+      border-top: 1px solid rgba(0,0,0,0.08);
+      padding: 60px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 40px;
+    }
+
+    footer small {
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: rgba(0,0,0,0.5);
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    footer p,
+    footer a {
+      color: black;
+      text-decoration: none;
+      font-size: 22px;
+      line-height: 1.7;
+    }
+
+    @media(max-width: 900px) {
+      .hero,
+      .grid-3,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 56px;
+      }
+
+      .section-title h2 {
+        font-size: 42px;
+      }
+
+      .logo .main {
+        font-size: 38px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div></div>
+
+      <div class="logo">
+        <div class="small">The House</div>
+        <div class="small">of</div>
+        <div class="main">NAPOLEON</div>
+        <div class="sub">by Low Tide</div>
+      </div>
+
+      <a class="button" href="https://instagram.com/anna.lowtide" target="_blank">
+        Order Now
+      </a>
+    </header>
+
+    <section class="hero">
+
+      <div class="hero-text">
+        <small>
+          Timeless by recipe.<br>
+          Made for today.
+        </small>
+
+        <h1>
+          Crisp layers.<br>
+          Silky cream.<br>
+          Pure indulgence.
+        </h1>
+
+        <p>
+          Our signature Napoleon cakes are handmade in small batches using the finest ingredients.
+        </p>
+
+        <a class="button" href="https://instagram.com/anna.lowtide" target="_blank">
+          Order Now
+        </a>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1400&auto=format&fit=crop" />
+
+    </section>
+
+    <section>
+
+      <div class="section-title">
+        <small>Our Flavours</small>
+        <h2>Three classics. Timeless for a reason.</h2>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop">
+          <h3>Classic Vanilla</h3>
+          <p>Crisp layers of golden pastry with smooth vanilla cream.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?q=80&w=1200&auto=format&fit=crop">
+          <h3>Raspberry</h3>
+          <p>Silky vanilla cream with vibrant raspberry compote.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=1200&auto=format&fit=crop">
+          <h3>Pistachio</h3>
+          <p>Roasted pistachio cream between crisp pastry layers.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+
+      <div class="footer-grid">
+
+        <div>
+          <small>Instagram</small>
+          <a href="https://instagram.com/anna.lowtide" target="_blank">
+            @anna.lowtide
+          </a>
+        </div>
+
+        <div>
+          <small>Pick Up</small>
+          <p>
+            Calle La Fuensanta 8<br>
+            Fuengirola<br>
+            Low Tide Cafe
+          </p>
+        </div>
+
+        <div>
+          <small>WhatsApp</small>
+          <a href="https://wa.me/34673890457" target="_blank">
+            +34 673 89 04 57
+          </a>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
