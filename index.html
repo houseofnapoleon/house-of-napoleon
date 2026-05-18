@@ -498,7 +498,7 @@
     aspect-ratio: 1 / 1;
   }
 }
-    /* ========= CONTACT ========= */
+   /* ========= CONTACT ========= */
 
 .contact-section {
   background: #f7f3ef;
@@ -517,8 +517,10 @@
 
   justify-content: space-between;
 
-  gap: 40px;
+  gap: 48px;
 }
+
+/* ========= LEFT ========= */
 
 .contact-left {
   display: flex;
@@ -564,7 +566,11 @@
   font-weight: 400;
 
   line-height: 1.05;
+
+  color: #111;
 }
+
+/* ========= DIVIDER ========= */
 
 .contact-divider {
   width: 1px;
@@ -574,13 +580,49 @@
   background: rgba(0,0,0,0.08);
 }
 
+/* ========= MIDDLE ========= */
+
+.contact-middle {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
 .contact-middle p {
-  font-size: 1.08rem;
+  font-size: 1.02rem;
 
   line-height: 1.7;
 
-  color: rgba(0,0,0,0.74);
+  color: rgba(0,0,0,0.72);
 }
+
+/* ========= WHATSAPP ========= */
+
+.whatsapp-link {
+  text-decoration: none;
+
+  font-size: 0.9rem;
+
+  letter-spacing: 0.08em;
+
+  color: #111;
+
+  opacity: 0.72;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.whatsapp-link:hover {
+  opacity: 1;
+
+  transform: translateY(-1px);
+}
+
+/* ========= BUTTON ========= */
 
 .maps-button {
   height: 54px;
@@ -603,7 +645,17 @@
   letter-spacing: 0.14em;
 
   color: #111;
+
+  transition:
+    background 0.25s ease,
+    opacity 0.25s ease;
 }
+
+.maps-button:hover {
+  opacity: 0.7;
+}
+
+/* ========= MOBILE ========= */
 
 @media (max-width: 1100px) {
 
@@ -615,32 +667,14 @@
     flex-direction: column;
 
     align-items: flex-start;
+
+    padding: 36px 32px;
   }
 
   .contact-divider {
     display: none;
   }
 
-}
-
-    .whatsapp-link {
-  display: inline-block;
-
-  margin-top: 18px;
-
-  text-decoration: none;
-
-  font-size: 0.92rem;
-
-  letter-spacing: 0.08em;
-
-  color: rgba(0,0,0,0.72);
-
-  transition: opacity 0.25s ease;
-}
-
-.whatsapp-link:hover {
-  opacity: 0.55;
 }
     
   </style>
