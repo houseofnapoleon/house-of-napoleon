@@ -38,7 +38,61 @@
       align-items: flex-start;
     }
 
-.hero-logo {
+.hero {
+  position: relative;
+
+  min-height: 760px;
+
+  overflow: hidden;
+  border-radius: 32px;
+
+  background: #FAF7F2;
+
+  padding: 120px 70px 90px;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+
+  background-image: url('realhero.png');
+
+  background-size: cover;
+  background-position: right center;
+
+  opacity: 0.92;
+
+  transform: scale(1.03);
+
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 2;
+
+  background:
+    linear-gradient(
+      90deg,
+      #FAF7F2 0%,
+      rgba(250,247,242,0.98) 18%,
+      rgba(250,247,242,0.95) 30%,
+      rgba(250,247,242,0.88) 40%,
+      rgba(250,247,242,0.72) 52%,
+      rgba(250,247,242,0.42) 66%,
+      rgba(250,247,242,0.12) 80%,
+      transparent 100%
+    );
+
+  pointer-events: none;
+}
+
+    .hero-logo {
   position: absolute;
 
   top: -22px;
@@ -91,22 +145,6 @@
       text-transform: uppercase;
     }
 
-.hero {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-
-  align-items: center;
-
-  gap: 40px;
-
-  padding: 40px 0 80px;
-
-  position: relative;
-
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
     .hero-text {
       position: relative;
       z-index: 5;
@@ -144,61 +182,6 @@
 
       font-size: 18px;
     }
-
- .hero-image {
-  position: relative;
-
-  width: 100%;
-  height: 620px;
-
-  overflow: hidden;
-
-  border-radius: 32px;
-}
-
-.hero-image::before {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  background:
-    linear-gradient(
-      90deg,
-      #FAF7F2 0%,
-      rgba(250,247,242,0.99) 14%,
-      rgba(250,247,242,0.96) 26%,
-      rgba(250,247,242,0.88) 38%,
-      rgba(250,247,242,0.72) 50%,
-      rgba(250,247,242,0.46) 62%,
-      rgba(250,247,242,0.20) 74%,
-      rgba(250,247,242,0.06) 84%,
-      transparent 100%
-    ),
-
-    linear-gradient(
-      180deg,
-      rgba(250,247,242,0.14) 0%,
-      transparent 22%
-    );
-
-  z-index: 2;
-}
-
-.hero-image img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  object-position: center 32%;
-
-  display: block;
-
-  filter:
-    brightness(0.98)
-    contrast(0.96)
-    saturate(0.96);
-}
 
     section {
       padding-bottom: 120px;
@@ -366,9 +349,44 @@
 
   </div>
 
-  <div class="hero-image">
-    <img src="realhero.png">
+  <section class="hero">
+
+  <div class="hero-bg"></div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-logo">
+    <img src="logo transparent.png">
   </div>
+
+  <div class="hero-text">
+
+    <small>
+      Timeless by recipe.<br>
+      Made for today.
+    </small>
+
+    <h1>
+      Crisp layers.<br>
+      Silky cream.<br>
+      Pure indulgence.
+    </h1>
+
+    <p>
+      Our signature Napoleon cakes are handmade in small batches using the finest ingredients.
+    </p>
+
+    <a
+      class="button"
+      href="https://instagram.com/anna.lowtide"
+      target="_blank"
+    >
+      Order Now
+    </a>
+
+  </div>
+
+</section>
 
 </section>
 
