@@ -70,21 +70,48 @@
 
     /* ========= OVERLAY ========= */
 
-.hero-overlay {
+ .hero-overlay {
+
   position: absolute;
+
+
+
   inset: 0;
-  z-index: 999;
+
+
+
+  z-index: 2;
+
+
+
+  pointer-events: none;
+
+
 
 background:
-  radial-gradient(
-    circle at 22% 50%,
-    rgba(248,245,241,0.72) 0%,
-    rgba(248,245,241,0.58) 18%,
-    rgba(248,245,241,0.34) 38%,
-    rgba(248,245,241,0.14) 58%,
-    rgba(248,245,241,0.04) 76%,
-    rgba(248,245,241,0) 100%
+
+  linear-gradient(
+
+    to right,
+
+    rgba(247,243,239,1) 0%,
+
+    rgba(247,243,239,1) 14%,
+
+    rgba(247,243,239,0.98) 26%,
+
+    rgba(247,243,239,0.9) 40%,
+
+    rgba(247,243,239,0.68) 54%,
+
+    rgba(247,243,239,0.38) 68%,
+
+    rgba(247,243,239,0.12) 82%,
+
+    rgba(247,243,239,0) 94%
+
   );
+
 }
 
     /* ========= LOGO ========= */
