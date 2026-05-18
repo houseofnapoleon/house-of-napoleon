@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>The House of Napoleon</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,9 +11,6 @@
 
   <style>
 
-    .hero {
-  position: relative;
-      
     * {
       margin: 0;
       padding: 0;
@@ -32,139 +30,119 @@
       margin: auto;
     }
 
-header {
-  padding: 18px;
+    header {
+      padding-top: 18px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.logo {
-  text-align: center;
-  font-family: 'Cormorant Garamond', serif;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 120px;
-}
-
-    .logo .small {
-      font-size: 12px;
-      letter-spacing: 0.35em;
-      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
     }
 
-    .logo .main {
-      font-size: 52px;
-      letter-spacing: 0.18em;
-    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    .logo .sub {
-      font-style: italic;
-      font-size: 18px;
+      height: 140px;
     }
 
     .button {
       background: black;
       color: white;
+
       padding: 14px 28px;
+
       border-radius: 999px;
+
       text-decoration: none;
+
       font-size: 13px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  align-items: center;
+    .hero {
+      position: relative;
 
-  min-height: 760px;
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      align-items: center;
 
-  padding: 40px 0 80px;
+      min-height: 760px;
 
-  background-image:
-    linear-gradient(
-      90deg,
-      rgba(250,247,242,0.98) 0%,
-      rgba(250,247,242,0.92) 18%,
-      rgba(250,247,242,0.58) 38%,
-      rgba(250,247,242,0.18) 58%,
-      rgba(250,247,242,0.02) 78%
-    ),
-    url("realhero.png");
+      margin-top: -20px;
 
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
+      padding: 40px 0 80px;
 
-  overflow: hidden;
-}
+      background-image:
+        linear-gradient(
+          90deg,
+          rgba(250,247,242,0.98) 0%,
+          rgba(250,247,242,0.92) 18%,
+          rgba(250,247,242,0.58) 38%,
+          rgba(250,247,242,0.18) 58%,
+          rgba(250,247,242,0.02) 78%
+        ),
+        url("realhero.png");
 
-    h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 68px;
-  line-height: 0.88;
-  margin: 22px 0;
-  font-weight: 400;
-}
+      background-size: cover;
+      background-position: center right;
+      background-repeat: no-repeat;
 
-    .hero::after {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  background:
-    radial-gradient(
-      circle at 72% 30%,
-      rgba(255,255,255,0.24),
-      transparent 42%
-    );
-
-  pointer-events: none;
-}
-    
-    .hero-text p {
-      max-width: 500px;
-      color: rgba(0,0,0,0.58);
-      margin-bottom: 40px;
-      font-size: 18px;
+      overflow: hidden;
     }
-    
-.hero-text {
-  position: relative;
-  z-index: 2;
-
-  max-width: 520px;
-}
-
-    .hero h1 {
-  line-height: 0.95;
-  letter-spacing: -2px;
-}
 
     .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
+      content: "";
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(250,247,242,0.98) 0%,
-      rgba(250,247,242,0.88) 20%,
-      rgba(250,247,242,0.52) 42%,
-      rgba(250,247,242,0.12) 68%,
-      rgba(250,247,242,0.02) 100%
-    );
+      position: absolute;
+      inset: 0;
 
-  z-index: 2;
-  pointer-events: none;
-}
+      background:
+        radial-gradient(
+          circle at 72% 30%,
+          rgba(255,255,255,0.22),
+          transparent 42%
+        );
+
+      pointer-events: none;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 5;
+
+      max-width: 520px;
+    }
+
+    .hero-text small {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+
+      color: rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 68px;
+      line-height: 0.92;
+      letter-spacing: -2px;
+
+      margin: 22px 0;
+
+      font-weight: 400;
+    }
+
+    .hero-text p {
+      max-width: 500px;
+
+      color: rgba(0,0,0,0.58);
+
+      margin-bottom: 40px;
+
+      font-size: 18px;
+    }
 
     section {
       padding-bottom: 120px;
@@ -178,33 +156,42 @@ header {
     .section-title small {
       text-transform: uppercase;
       letter-spacing: 0.2em;
+
       color: rgba(0,0,0,0.5);
     }
 
     .section-title h2 {
       font-family: 'Cormorant Garamond', serif;
+
       font-size: 56px;
       font-weight: 400;
+
       margin-top: 20px;
     }
 
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(3,1fr);
+
       gap: 30px;
     }
 
-   .card img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  border-radius: 24px;
-  margin-bottom: 20px;
-}
+    .card img {
+      width: 100%;
+      height: 420px;
+
+      object-fit: cover;
+
+      border-radius: 24px;
+
+      margin-bottom: 20px;
+    }
 
     .card h3 {
       font-family: 'Cormorant Garamond', serif;
+
       font-size: 32px;
+
       margin-bottom: 10px;
     }
 
@@ -214,36 +201,52 @@ header {
 
     footer {
       border-top: 1px solid rgba(0,0,0,0.08);
+
       padding: 60px 0;
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: repeat(3,1fr);
+
       gap: 40px;
     }
 
     footer small {
       text-transform: uppercase;
       letter-spacing: 0.15em;
+
       color: rgba(0,0,0,0.5);
+
       display: block;
+
       margin-bottom: 14px;
     }
 
     footer p,
     footer a {
       color: black;
+
       text-decoration: none;
+
       font-size: 22px;
       line-height: 1.7;
     }
 
     @media(max-width: 900px) {
+
       .hero,
       .grid-3,
       .footer-grid {
         grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+
+        padding: 120px 0 80px;
+
+        background-position: center;
       }
 
       h1 {
@@ -254,16 +257,20 @@ header {
         font-size: 42px;
       }
 
-      .logo .main {
-        font-size: 38px;
-      }
-
       header {
         flex-direction: column;
+
         gap: 25px;
       }
+
+      .logo {
+        height: auto;
+      }
+
     }
+
   </style>
+
 </head>
 
 <body>
@@ -271,21 +278,27 @@ header {
   <div class="container">
 
     <header>
+
       <div></div>
 
       <div class="logo">
-<img src="Logo square.png" style="width: 300px;">
+        <img src="Logo square.png" style="width: 300px;">
+      </div>
 
-</div>
-
-      <a class="button" href="https://instagram.com/anna.lowtide" target="_blank">
+      <a
+        class="button"
+        href="https://instagram.com/anna.lowtide"
+        target="_blank"
+      >
         Order Now
       </a>
+
     </header>
 
     <section class="hero">
 
       <div class="hero-text">
+
         <small>
           Timeless by recipe.<br>
           Made for today.
@@ -301,64 +314,60 @@ header {
           Our signature Napoleon cakes are handmade in small batches using the finest ingredients.
         </p>
 
-        <a class="button" href="https://instagram.com/anna.lowtide" target="_blank">
+        <a
+          class="button"
+          href="https://instagram.com/anna.lowtide"
+          target="_blank"
+        >
           Order Now
         </a>
+
       </div>
-
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  align-items: center;
-
-  min-height: 760px;
-
-  padding: 40px 0 80px;
-
-  background-image:
-    linear-gradient(
-      90deg,
-      rgba(250,247,242,0.98) 0%,
-      rgba(250,247,242,0.92) 18%,
-      rgba(250,247,242,0.58) 38%,
-      rgba(250,247,242,0.18) 58%,
-      rgba(250,247,242,0.02) 78%
-    ),
-    url("realhero.png");
-
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
-
-  overflow: hidden;
-}
 
     </section>
 
     <section>
 
       <div class="section-title">
+
         <small>Our Flavours</small>
-        <h2>Three classics. Timeless for a reason.</h2>
+
+        <h2>
+          Three classics. Timeless for a reason.
+        </h2>
+
       </div>
 
       <div class="grid-3">
 
         <div class="card">
           <img src="vanilla.png">
+
           <h3>Classic Vanilla</h3>
-          <p>Crisp layers of golden pastry with smooth vanilla cream.</p>
+
+          <p>
+            Crisp layers of golden pastry with smooth vanilla cream.
+          </p>
         </div>
 
         <div class="card">
           <img src="raspberry.png">
+
           <h3>Raspberry</h3>
-          <p>Silky vanilla cream with vibrant raspberry compote.</p>
+
+          <p>
+            Silky vanilla cream with vibrant raspberry compote.
+          </p>
         </div>
 
         <div class="card">
           <img src="pistachio.png">
+
           <h3>Pistachio</h3>
-          <p>Roasted pistachio cream between crisp pastry layers.</p>
+
+          <p>
+            Roasted pistachio cream between crisp pastry layers.
+          </p>
         </div>
 
       </div>
@@ -370,26 +379,41 @@ header {
       <div class="footer-grid">
 
         <div>
+
           <small>Instagram</small>
-          <a href="https://instagram.com/anna.lowtide" target="_blank">
+
+          <a
+            href="https://instagram.com/anna.lowtide"
+            target="_blank"
+          >
             @anna.lowtide
           </a>
+
         </div>
 
         <div>
+
           <small>Pick Up</small>
+
           <p>
             Calle La Fuensanta 8<br>
             Fuengirola<br>
             Low Tide Cafe
           </p>
+
         </div>
 
         <div>
+
           <small>WhatsApp</small>
-          <a href="https://wa.me/34673890457" target="_blank">
+
+          <a
+            href="https://wa.me/34673890457"
+            target="_blank"
+          >
             +34 673 89 04 57
           </a>
+
         </div>
 
       </div>
