@@ -56,12 +56,7 @@ padding: 140px 70px 120px;
 
 .hero-bg {
   position: absolute;
-
-  top: 0;
-left: 0;
-bottom: 0;
-
-    width: 115%;
+inset: 0;
   
   background-image: url('realhero.png');
 
@@ -69,15 +64,13 @@ bottom: 0;
   background-position: 85% 10%;
 
   opacity: 0.92;
-
-  transform: translateX(90px);
-
-  z-index: 1;
   
   filter:
-  brightness(1.02)
-  saturate(0.92)
-  contrast(0.96);
+    brightness(1.02)
+    saturate(0.92)
+    contrast(0.96);
+
+  z-index: 1;
 }
 
 .hero-overlay {
@@ -86,32 +79,22 @@ bottom: 0;
 
   z-index: 2;
 
+  pointer-events: none;
+
   background:
     linear-gradient(
       90deg,
       #FAF7F2 0%,
-      rgba(250,247,242,0.995) 16%,
-      rgba(250,247,242,0.985) 28%,
-      rgba(250,247,242,0.94) 40%,
-      rgba(250,247,242,0.82) 52%,
-      rgba(250,247,242,0.58) 66%,
-      rgba(250,247,242,0.26) 80%,
-      rgba(250,247,242,0.08) 90%,
+      rgba(250,247,242,0.99) 22%,
+      rgba(250,247,242,0.97) 36%,
+      rgba(250,247,242,0.92) 48%,
+      rgba(250,247,242,0.82) 58%,
+      rgba(250,247,242,0.64) 68%,
+      rgba(250,247,242,0.38) 78%,
+      rgba(250,247,242,0.16) 88%,
+      rgba(250,247,242,0.04) 96%,
       transparent 100%
     );
-
-  pointer-events: none;
-}
-
-    .hero-logo {
-  position: absolute;
-
-  top: -22px;
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  z-index: 10;
 }
 
 
