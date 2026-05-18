@@ -46,10 +46,15 @@
       height: 140px;
     }
 
-    .logo img {
-      width: 300px;
-      margin-top: 12px;
-    }
+   .logo img {
+  width: 300px;
+
+  margin-top: 12px;
+
+  opacity: 0.94;
+
+  mix-blend-mode: multiply;
+}
 
     .button {
       background: black;
@@ -121,17 +126,20 @@
       position: relative;
 
       mask-image: linear-gradient(
-        to left,
-        black 72%,
-        transparent 100%
-      );
+  to left,
+  black 58%,
+  rgba(0,0,0,0.85) 68%,
+  rgba(0,0,0,0.45) 82%,
+  transparent 100%
+);
 
-      -webkit-mask-image: linear-gradient(
-        to left,
-        black 72%,
-        transparent 100%
-      );
-    }
+-webkit-mask-image: linear-gradient(
+  to left,
+  black 58%,
+  rgba(0,0,0,0.85) 68%,
+  rgba(0,0,0,0.45) 82%,
+  transparent 100%
+);
 
     .hero-image::before {
       content: "";
