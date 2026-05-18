@@ -41,7 +41,7 @@
 .hero {
   position: relative;
 
-  min-height: 760px;
+  min-height: 700px;
 
   overflow: hidden;
   border-radius: 32px;
@@ -59,17 +59,17 @@ padding: 140px 70px 120px;
   inset: 0;
 
   background-image: url('realhero.png');
-
-  background-size: 72%;
-  background-position: 112% 6%;
   background-repeat: no-repeat;
 
-  opacity: 0.92;
+  background-size: 68%;
+  background-position: 112% 0%;
+
+  opacity: 0.88;
 
   filter:
-    brightness(1.02)
-    saturate(0.92)
-    contrast(0.96);
+    brightness(1.04)
+    saturate(0.88)
+    contrast(0.94);
 
   z-index: 1;
 }
@@ -79,19 +79,26 @@ padding: 140px 70px 120px;
   inset: 0;
 
   z-index: 2;
-
   pointer-events: none;
 
   background:
     linear-gradient(
       90deg,
-      rgba(250,247,242,0.96) 0%,
-      rgba(250,247,242,0.90) 16%,
-      rgba(250,247,242,0.72) 34%,
-      rgba(250,247,242,0.42) 52%,
-      rgba(250,247,242,0.16) 72%,
-      rgba(250,247,242,0.04) 88%,
+      rgba(250,247,242,0.99) 0%,
+      rgba(250,247,242,0.96) 14%,
+      rgba(250,247,242,0.88) 28%,
+      rgba(250,247,242,0.72) 42%,
+      rgba(250,247,242,0.46) 58%,
+      rgba(250,247,242,0.20) 74%,
+      rgba(250,247,242,0.05) 88%,
       transparent 100%
+    ),
+
+    linear-gradient(
+      180deg,
+      rgba(250,247,242,0.22) 0%,
+      rgba(250,247,242,0.04) 24%,
+      transparent 42%
     );
 }
 
