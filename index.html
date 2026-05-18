@@ -54,7 +54,30 @@
   position: absolute;
   inset: 0;
 
-  background: red !important;
+  background-image:
+    radial-gradient(
+      circle at 28% 50%,
+      rgba(248,245,241,1) 0%,
+      rgba(248,245,241,0.96) 14%,
+      rgba(248,245,241,0.82) 32%,
+      rgba(248,245,241,0.58) 52%,
+      rgba(248,245,241,0.28) 72%,
+      rgba(248,245,241,0.08) 88%,
+      rgba(248,245,241,0) 100%
+    ),
+    url('realhero.png');
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    cover,
+    70%;
+
+  background-position:
+    center,
+    108% 8%;
 
   z-index: 1;
 }
