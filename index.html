@@ -28,17 +28,26 @@
       margin: auto;
     }
 
-  header {
-  padding: 12px 0 8px;
+ header {
+  padding: 0;
+  height: 110px;
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-    .logo {
-      text-align: center;
-      font-family: 'Cormorant Garamond', serif;
-    }
+  .logo {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  height: 110px;
+  overflow: hidden;
+}
 
     .logo .small {
       font-size: 12px;
@@ -223,7 +232,8 @@
       <div></div>
 
       <div class="logo">
- <img src="Logo square.png" style="width: 300px;">
+<img src="Logo square.png" style="width: 300px; margin-top: -28px;">
+
 </div>
 
       <a class="button" href="https://instagram.com/anna.lowtide" target="_blank">
