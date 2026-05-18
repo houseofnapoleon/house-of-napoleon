@@ -48,29 +48,29 @@
 
     /* ========= BACKGROUND ========= */
 
-    .hero-bg {
-      position: absolute;
-      inset: 0;
+   .hero-bg {
+  position: absolute;
+  inset: 0;
 
-      background-image: url('realhero.png');
+  background-image: url('realhero.png');
 
-      background-repeat: no-repeat;
+  background-repeat: no-repeat;
 
-      background-size: 82%;
+  background-size: cover;
 
-      background-position: 112% 6%;
+  background-position: center right;
 
-      z-index: 1;
+  z-index: 1;
 
-filter:
-  brightness(1.22)
-  saturate(0.72)
-  contrast(0.82);
-    }
+  filter:
+    brightness(1.18)
+    saturate(0.78)
+    contrast(0.86);
+}
 
     /* ========= OVERLAY ========= */
 
-   .hero-overlay {
+.hero-overlay {
   position: absolute;
 
   inset: 0;
@@ -79,17 +79,17 @@ filter:
 
   pointer-events: none;
 
-background:
-  linear-gradient(
-    to right,
-    rgba(248,245,241,0.72) 0%,
-    rgba(248,245,241,0.58) 18%,
-    rgba(248,245,241,0.42) 34%,
-    rgba(248,245,241,0.26) 50%,
-    rgba(248,245,241,0.12) 68%,
-    rgba(248,245,241,0.04) 84%,
-    rgba(248,245,241,0) 100%
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgba(248,245,241,0.55) 0%,
+      rgba(248,245,241,0.42) 22%,
+      rgba(248,245,241,0.26) 42%,
+      rgba(248,245,241,0.12) 62%,
+      rgba(248,245,241,0.04) 82%,
+      rgba(248,245,241,0) 100%
+    );
+}
 }
 
     /* ========= LOGO ========= */
