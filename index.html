@@ -56,6 +56,26 @@
   display: flex;
   align-items: center;
 }
+
+    .hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(250,247,242,0.92) 0%,
+      rgba(250,247,242,0.84) 18%,
+      rgba(250,247,242,0.58) 36%,
+      rgba(250,247,242,0.22) 52%,
+      rgba(250,247,242,0.04) 68%,
+      transparent 82%
+    );
+}
     
 .hero-logo {
   position: absolute;
@@ -91,14 +111,11 @@
       text-transform: uppercase;
     }
 
-    .hero-text {
-      position: relative;
-      z-index: 5;
-
-      padding-top: 40px;
-
-      max-width: 520px;
-    }
+.hero-text,
+.hero-logo {
+  position: relative;
+  z-index: 3;
+}
 
     .hero-text small {
       text-transform: uppercase;
