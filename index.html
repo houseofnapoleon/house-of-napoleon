@@ -38,13 +38,33 @@
       align-items: flex-start;
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+   .logo {
+  position: relative;
+}
 
-      height: 140px;
-    }
+.logo::after {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 220px;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(250,247,242,0.82) 0%,
+      rgba(250,247,242,0.35) 45%,
+      transparent 72%
+    );
+
+  top: -10px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: -1;
+}
 
    .logo img {
   width: 300px;
