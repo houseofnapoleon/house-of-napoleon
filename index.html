@@ -91,18 +91,20 @@
       text-transform: uppercase;
     }
 
-    .hero {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
+ .hero {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
 
-      align-items: center;
+  align-items: center;
 
-      gap: 20px;
+  gap: 0;
 
-      padding: 20px 0 80px;
+  padding: 40px 0 80px;
 
-      position: relative;
-    }
+  position: relative;
+
+  overflow: hidden;
+}
 
     .hero-text {
       position: relative;
@@ -167,8 +169,24 @@ mask-image: linear-gradient(
   border-radius: 32px;
 }
 
-  .hero-image::before {
+.hero-image::before {
   content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(250,247,242,0.92) 0%,
+      rgba(250,247,242,0.72) 22%,
+      rgba(250,247,242,0.38) 38%,
+      rgba(250,247,242,0.12) 52%,
+      transparent 72%
+    );
+
+  z-index: 2;
+}
 
   position: absolute;
   inset: 0;
@@ -334,18 +352,6 @@ mask-image: linear-gradient(
 <body>
 
   <div class="container">
-
-<header>
-
-  <a
-    class="button"
-    href="https://instagram.com/anna.lowtide"
-    target="_blank"
-  >
-    Order Now
-  </a>
-
-</header>
 
 <section class="hero">
 
