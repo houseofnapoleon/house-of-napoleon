@@ -38,40 +38,40 @@
       align-items: flex-start;
     }
 
-   .logo {
-  position: relative;
-}
-
-.logo::after {
-  content: "";
-
+.hero-logo {
   position: absolute;
-
-  width: 420px;
-  height: 220px;
-
-  background:
-    radial-gradient(
-      ellipse,
-      rgba(250,247,242,0.82) 0%,
-      rgba(250,247,242,0.35) 45%,
-      transparent 72%
-    );
 
   top: -10px;
   left: 50%;
 
   transform: translateX(-50%);
 
+  z-index: 10;
+}
+
+.hero-logo::after {
+  content: "";
+
+  position: absolute;
+
+  inset: -30px;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(250,247,242,0.95) 0%,
+      rgba(250,247,242,0.72) 45%,
+      rgba(250,247,242,0.18) 72%,
+      transparent 100%
+    );
+
   z-index: -1;
 }
 
-   .logo img {
-  width: 300px;
+.hero-logo img {
+  width: 340px;
 
-  margin-top: 12px;
-
-  opacity: 0.94;
+  opacity: 0.96;
 
   mix-blend-mode: multiply;
 }
