@@ -59,10 +59,11 @@ padding: 140px 70px 120px;
 inset: 0;
   
   background-image: url('realhero.png');
+   background-repeat: no-repeat;
 
-  background-size: 80%;
+  background-size: 95%;
   background-position: 85% 10%;
-
+ 
   opacity: 0.92;
   
   filter:
@@ -97,7 +98,17 @@ inset: 0;
     );
 }
 
+.hero-logo {
+  position: absolute;
 
+  top: 28px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 6;
+}
+    
 .hero-logo img {
   width: 450px;
 
@@ -258,10 +269,6 @@ inset: 0;
 
       .hero {
         gap: 40px;
-      }
-
-      .hero-image img {
-        height: 500px;
       }
 
       h1 {
