@@ -365,8 +365,135 @@
 
   color: rgba(0,0,0,0.72);
 }
+  /* ========= FORMATS ========= */
+
+.formats-section {
+  background: #f7f3ef;
+
+  padding:
+    40px 60px 140px;
+}
+
+/* ========= GRID ========= */
+
+.formats-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+/* ========= CARD ========= */
+
+.format-card {
+  background: #efe9e3;
+
+  display: flex;
+
+  align-items: stretch;
+
+  min-height: 320px;
+
+  overflow: hidden;
+}
+
+/* ========= IMAGE ========= */
+
+.format-card img {
+  width: 48%;
+
+  object-fit: cover;
+}
+
+/* ========= INFO ========= */
+
+.format-info {
+  flex: 1;
+
+  padding: 42px 34px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+/* ========= TOP ========= */
+
+.format-top h3 {
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+
+  color: #111;
+}
+
+.format-top span {
+  font-size: 1.02rem;
+
+  color: rgba(0,0,0,0.68);
+}
+
+/* ========= DIVIDER ========= */
+
+.format-divider {
+  width: 72px;
+  height: 1px;
+
+  background: rgba(0,0,0,0.16);
+
+  margin:
+    34px 0;
+}
+
+/* ========= PRICE ========= */
+
+.format-price {
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 3.4rem;
+
+  line-height: 1;
+
+  color: #111;
+}
+
+/* ========= MOBILE ========= */
+
+@media (max-width: 1100px) {
+
+  .formats-section {
+    padding:
+      20px 28px 90px;
+  }
+
+  .formats-grid {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+  .format-card {
+    flex-direction: column;
+  }
+
+  .format-card img {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+  }
+}
     
   </style>
+  
 </head>
 
 <body>
@@ -467,7 +594,90 @@
     </div>
 
   </div>
+<section class="formats-section">
 
+  <p class="section-label">
+    OUR FORMATS
+  </p>
+
+  <h2 class="section-title">
+    Made to share. Made to enjoy.
+  </h2>
+
+  <div class="formats-grid">
+
+    <!-- LARGE -->
+
+    <div class="format-card">
+
+      <img src="largecake.png" alt="Large Napoleon Cake">
+
+      <div class="format-info">
+
+        <div class="format-top">
+          <h3>LARGE CAKE</h3>
+          <span>10 pieces</span>
+        </div>
+
+        <div class="format-divider"></div>
+
+        <div class="format-price">
+          €43
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- BENTO -->
+
+    <div class="format-card">
+
+      <img src="bento.png" alt="Bento Napoleon Cake">
+
+      <div class="format-info">
+
+        <div class="format-top">
+          <h3>BENTO CAKE</h3>
+          <span>4 pieces</span>
+        </div>
+
+        <div class="format-divider"></div>
+
+        <div class="format-price">
+          €28
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- GIFT BOX -->
+
+    <div class="format-card">
+
+      <img src="giftbox.png" alt="Napoleon Gift Box">
+
+      <div class="format-info">
+
+        <div class="format-top">
+          <h3>ASSORTED GIFT BOX</h3>
+          <span>3 flavours</span>
+        </div>
+
+        <div class="format-divider"></div>
+
+        <div class="format-price">
+          €23
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 </section>
   
 </body>
