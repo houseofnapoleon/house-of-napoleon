@@ -668,10 +668,12 @@ body {
   
 .contact-brand img {
   width: 140px !important;
-  max-width: 140px;
-  height: auto;
+  min-width: 140px !important;
+  max-width: 140px !important;
 
-  opacity: 0.9;
+  height: auto !important;
+
+  flex: none !important;
 
   display: block;
 }
