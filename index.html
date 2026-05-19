@@ -474,7 +474,81 @@ body {
   .flavour-card p {
     max-width: 100%;
   }
+.order-cta-section {
+  background: #f8f5f1;
 
+  padding: 10px 28px 70px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.order-cta-label {
+  font-size: 0.82rem;
+
+  letter-spacing: 0.24em;
+
+  text-transform: uppercase;
+
+  color: rgba(0,0,0,0.42);
+
+  margin-bottom: 14px;
+}
+
+.order-cta-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  color: #111;
+
+  margin-bottom: 30px;
+}
+
+.order-cta-button {
+  height: 58px;
+
+  padding: 0 38px;
+
+  border-radius: 999px;
+
+  background: #000;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.86rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.14em;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.order-cta-button:hover {
+  transform: translateY(-2px);
+
+  opacity: 0.92;
+}
+  
 }
 
     /* ========= CONTACT ========= */
@@ -871,7 +945,27 @@ body {
   </div>
 
 </section>
+  
+<section class="order-cta-section">
 
+  <p class="order-cta-label">
+    SMALL BATCHES. BIG FLAVOUR.
+  </p>
+
+  <h2>
+    Order yours today.
+  </h2>
+
+  <a
+    href="https://instagram.com/anna.lowtide"
+    target="_blank"
+    class="order-cta-button"
+  >
+    ORDER NOW
+  </a>
+
+</section>
+  
 <section class="contact-section">
 
   <div class="contact-card">
