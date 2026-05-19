@@ -230,73 +230,44 @@ body {
     
 /* ========= FLAVOURS ========= */
 
-.flavours-section {
-  position: relative;
+@media (max-width: 1100px) {
 
-  z-index: 10;
+  .flavours-section {
+    padding: 80px 28px 90px;
+  }
 
-  background: #f8f5f1;
+  .flavours-grid {
+    grid-template-columns: 1fr;
 
-  padding:
-    110px 60px 120px;
-}
+    gap: 54px;
+  }
 
-/* ========= SECTION LABEL ========= */
+  .flavour-card {
+    border-right: none;
 
-.section-label {
-  text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
 
-  font-size: 0.9rem;
+    padding: 0 0 54px;
+  }
 
-  letter-spacing: 0.24em;
+  .flavour-card:last-child {
+    border-bottom: none;
 
-  text-transform: uppercase;
+    padding-bottom: 0;
+  }
 
-  color: rgba(0,0,0,0.42);
+  .flavour-card img {
+    max-width: 100%;
 
-  margin-bottom: 18px;
-}
+    aspect-ratio: 1 / 1;
 
-/* ========= SECTION TITLE ========= */
+    object-fit: cover;
+  }
 
-.section-title {
-  text-align: center;
+  .flavour-card p {
+    max-width: 100%;
+  }
 
-  font-family: 'Cormorant Garamond', serif;
-
-  font-size: clamp(2.8rem, 4vw, 4.5rem);
-
-  font-weight: 400;
-
-  line-height: 1;
-
-  letter-spacing: -0.03em;
-
-  color: #111;
-
-  margin-bottom: 70px;
-}
-
-/* ========= GRID ========= */
-
-.flavours-grid {
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 20px;
-}
-
-/* ========= CARD ========= */
-
-.flavour-card {
-  padding: 0 18px;
-
-  border-right: 1px solid rgba(0,0,0,0.08);
-}
-
-.flavour-card:last-child {
-  border-right: none;
 }
 
 /* ========= CARD TITLE ========= */
@@ -315,20 +286,6 @@ body {
   text-transform: uppercase;
 
   color: #111;
-}
-
-/* ========= IMAGE ========= */
-
-.flavour-card img {
-  width: 100%;
-
-  aspect-ratio: 1 / 1;
-
-  object-fit: cover;
-
-  display: block;
-
-  margin-bottom: 22px;
 }
 
 /* ========= DESCRIPTION ========= */
