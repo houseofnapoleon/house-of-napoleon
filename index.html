@@ -432,6 +432,49 @@ body {
 
     aspect-ratio: 1 / 1;
   }
+
+}
+
+/* ========= FLAVOURS MOBILE ========= */
+
+@media (max-width: 1100px) {
+
+  .flavours-section {
+    padding: 80px 28px 90px;
+  }
+
+  .flavours-grid {
+    grid-template-columns: 1fr;
+
+    gap: 54px;
+  }
+
+  .flavour-card {
+    border-right: none;
+
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+
+    padding: 0 0 54px;
+  }
+
+  .flavour-card:last-child {
+    border-bottom: none;
+
+    padding-bottom: 0;
+  }
+
+  .flavour-card img {
+    max-width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+  }
+
+  .flavour-card p {
+    max-width: 100%;
+  }
+
 }
 
     /* ========= CONTACT ========= */
