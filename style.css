@@ -613,6 +613,51 @@ body {
 
   opacity: 0.92;
 }
+
+/* ========= ABOUT ========= */
+
+.about-section {
+background: #f8f5f1;
+padding: 40px 60px 120px;
+text-align: center;
+}
+
+.about-content {
+max-width: 760px;
+margin: 0 auto;
+}
+
+.about-content p {
+font-family: 'DM Sans', sans-serif;
+font-size: 1.05rem;
+line-height: 1.9;
+color: rgba(0,0,0,0.68);
+margin-bottom: 24px;
+}
+
+.about-content p:last-child {
+margin-bottom: 0;
+}
+
+/* ========= MOBILE ========= */
+
+@media (max-width: 1100px) {
+
+.about-section {
+padding: 20px 28px 90px;
+}
+
+.about-content {
+max-width: 100%;
+}
+
+.about-content p {
+font-size: 1rem;
+line-height: 1.85;
+}
+
+}
+
     /* ========= CONTACT ========= */
 
 .contact-section {
