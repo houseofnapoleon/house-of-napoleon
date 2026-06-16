@@ -8,6 +8,18 @@
     
 /* ========= BODY ========= */
 
+.seo-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.seo-header img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 body {
   margin: 0;
 
